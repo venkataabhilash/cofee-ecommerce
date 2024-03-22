@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .login-main-cnt{
+            display: flex;
+            flex-direction: row;
+            height: auto;
+        }
+        .bg-container{
+            /* background-image: url('./images/1320596.jpg'); */
+            height: auto;
+            width: 48%;
+            margin: 100px 20px 20px 60px;
+            padding: 0;
+            background-repeat: no-repeat;
+        }
+        .login-cnt{
+            width: 48%;
+        }
+        .login{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 90vh;
+            align-items: center;
+            text-transform: capitalize;
+            background-color: rgbA(133, 171, 158, 0.9);
+            width: 400px;
+            height: auto;
+            margin:  50px auto 10px;
+            border-radius: 8px;
+            font-size: 19px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        h2{
+            text-align: center;
+        }
+        label{
+            margin-bottom: 5px;
+        }
+        input{
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 2px;
+            width: 185px;
+        }
+        button{
+            padding: 8px;
+            border-radius: 4px;
+            background-color: rgb(153, 206, 239);
+            text-transform: capitalize;
+            font-size: medium;
+            cursor: pointer;
+        }
+        a{
+            padding-bottom: 10px;
+        }
+        
+       
+       @media screen and (max-width: 435px) {
+        .login{
+            margin: 70px auto;
+            width: 100%;
+            height: auto;
+        }
+        .login-main-cnt{
+            margin: 0;
+            padding: 0;
+        }
+        .bg-container{
+            width: 0;
+            height: 0;
+            margin: 0;
+            padding: 0;
+        }
+        .login-cnt{
+            width: 90%;
+            margin: 2px auto;
+        }
+        }
+        @media screen and (min-width: 435px) and (max-width: 1130px) {
+            .login{
+                margin: 70px auto;
+                height: auto;
+            }
+            .login-main-cnt{
+            margin: 0;
+            padding: 0;
+            }
+            .bg-container{
+                width: 0;
+                height: 0;
+                margin: 0;
+                padding: 0;
+            }
+            .login-cnt{
+                width: 90%;
+                margin: 2px auto;
+            }
+        
+       }
+    </style>
+    
+    <title>login</title>
+</head>
+<body style="margin: 0;">
+    <header>
+        <h1 class="heading">hola cofee</h1>
+        <nav>
+            <a href="./home.html">home</a>
+            <a href="./equipments.html">equipment</a>
+            <a href="./branch.html">our branches</a>
+            <a href="./contact.html">contact us</a>
+            <a href="./about.html">about</a>
+            <a href="./login.html">login</a>
+        </nav>
+        <a href="./order.html"><h3 class="order">track order</h3></a>
+        <a class="cart" href=""><i class="fa fa-shopping-cart"></i></a>
+    </header>
+    <div class="login-main-cnt">
+        <div class="bg-container">
+            <img src="./images/1320596.jpg" alt="" width="98%" height="80%">
+        </div>
+        <div class="login-cnt">
+            <div class="login">
+                <h2>welcome back</h2>
+                <form>
+                    <h2>login</h2>
+                    <label for="name">user name:</label>
+                    <input type="text" placeholder="enter your Name" name="id" required> <br>
+                    <label for="password" aria-required="true">password:</label> 
+                    <input type="password" placeholder="password" name="password" required> <br>
+                    <button type="submit">login</button>
+                </form>
+                <p>forgot password ? <a href="#">click here</a></p>
+                <p>new user? sign up <a href="./register.html"> here </a></p>
+                <a href="./home.html">home</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            help :-
+            <p>store location</p>
+            <p>terms apply</p>
+            <p>return polocy</p>
+            <p>refund polocy</p>
+        </div>
+        <div>
+            contact us :-
+            <p>hello@hola9.com</p>
+            <p> our main branch : <br>D.NO:40-5-19/4, Tikkal Road,<br> Moghalrajapuram,
+                Vijayawada,<br> Andhra Pradesh - 520010</p>
+        </div>
+        <div>
+            support :-
+            <p>contact</p>
+            <p>about</p>
+            <p>refund & return</p>
+            <p>t & c</p>
+        </div>
+        <div>
+            social media handles :-
+            <p>twiter : www.twiter.h9.com</p>
+            <p>instagram : www.inst.hola9.in</p>
+            <p>facebook : www.fb.hola9.in</p>
+            <p>youtube : www.youtube.h9.in</p>
+        </div>
+    </footer>
+</body>
+</html>

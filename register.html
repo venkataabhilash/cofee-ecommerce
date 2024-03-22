@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+                .login-main-cnt{
+            display: flex;
+            flex-direction: row;
+            height: auto;
+        }
+        .bg-container{
+            height: auto;
+            width: 48%;
+            margin: 100px 20px 20px 60px;
+            padding: 0;
+            background-repeat: no-repeat;
+        }
+        .login-cnt{
+            width: 48%;
+        }
+        
+        .login{
+            background-color: rgbA(133, 171, 158, 0.9);
+            text-align: center;
+            display: flex;
+            text-transform: capitalize;
+            flex-direction: column;
+            width: 40vw;
+            height: auto;
+            align-items: center;
+            margin: 50px auto 15px;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 5px;
+        
+        }
+        input{
+            margin-bottom: 5px;
+            padding: 3px;
+            width: 220px;
+        }
+        button{
+            padding: 5px;
+            border-radius: 4px;
+            background-color: rgb(153, 206, 239);
+            text-transform: capitalize;
+            font-size: medium;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 750px) {
+            .login{
+                width: 80%;
+                margin: 100px auto;
+                height: auto;
+            }
+            .login-main-cnt{
+            margin: 0;
+            padding: 0;
+        }
+        .bg-container{
+            width: 0;
+            height: 0;
+            margin: 0;
+            padding: 0;
+        }
+        .login-cnt{
+            width: 90%;
+            margin: 2px auto;
+        }
+        }
+        @media screen and (min-width: 751px) and (max-width: 1130px) {
+            .login{
+                width: 60%;
+                margin: 130px auto;
+                height: auto;
+            }
+            .login-main-cnt{
+            margin: 0;
+            padding: 0;
+            }
+            .bg-container{
+                width: 0;
+                height: 0;
+                margin: 0;
+                padding: 0;
+            }
+            .login-cnt{
+                width: 60%;
+                margin: 2px auto;
+            }
+            
+        }
+        
+    </style>
+    <title>Sign-up</title>
+</head>
+<body style="margin: 0;">
+    <header>
+        <h1 class="heading">hola cofee</h1>
+        <nav>
+            <a href="./home.html">home</a>
+            <a href="./equipments.html">equipment</a>
+            <a href="./branch.html">our branches</a>
+            <a href="./contact.html">contact us</a>
+            <a href="./about.html">about</a>
+            <a href="./login.html">login</a>
+        </nav>
+        <a href="./order.html"><h3 class="order">track order</h3></a>
+        <a class="cart" href=""><i class="fa fa-shopping-cart"></i></a>
+    </header>
+    <div class="login-main-cnt">
+        <div class="bg-container">
+            <img src="./images/1320596.jpg" alt="" width="98%" height="80%">
+        </div>
+        <div class="login-cnt">
+        <div class="login">
+            <h1>hello welcome to hola9</h1>
+            <form action="" method="post" onsubmit="return formValidation()">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="your name" required>
+                <label for="phone">mobile</label>
+                <input type="number" placeholder="phone"id="phone" required>
+                <label for="mail">mail</label>
+                <input type="email" name="email" id="email" placeholder="enter your mail" required>
+                <label for="dob">date of birth</label>
+                <input type="date" required>
+                <label for="password">password</label>
+                <input type="password" id="password" name="password" placeholder="create password" minlength="8" required> 
+                <label for="password"> renter password</label>
+                <input type="password" id="conformPassword" name="password" placeholder="conform password" minlength="8" required> 
+            <button type="submit">submit</button>
+            </form>
+            <a href="../cofee project/home.html">home</a>
+            <p>already registered ? <a href="../cofee project/login.html">login</a></p>
+        </div>
+    </div>
+    </div>
+    <footer>
+    <div>help :-
+        <p>store location</p>
+        <p>terms apply</p>
+        <p>return polocy</p>
+        <p>refund polocy</p>
+    </div>
+    <div>contact us :-
+        <p>hello@hola9.com</p>
+        <p> our main branch : <br>D.NO:40-5-19/4, Tikkal Road,<br> Moghalrajapuram,
+            Vijayawada,<br> Andhra Pradesh - 520010</p>
+    </div>
+    <div>
+        support :-
+        <p>contact</p>
+        <p>about</p>
+        <p>refund & return</p>
+        <p>t & c</p>
+    </div>
+    <div>
+        social media handles :-
+        <p>twiter : www.twiter.h9.com</p>
+        <p>instagram : www.inst.hola9.in</p>
+        <p>facebook : www.fb.hola9.in</p>
+        <p>youtube : www.youtube.h9.in</p>
+    </div>
+</footer>
+<script>
+    
+    function formValidation (){ 
+        var password= document.getElementById('password').value;
+        var conformPassword= document.getElementById('conformPassword').value;
+        if (password == conformPassword){
+            // alert("password didnt match")
+            return true
+        }
+        else {
+            alert("please recheck your password")
+            return false
+        }
+    }
+    let name= document.getElementById('name').value;
+    localStorage.setItem('name',name)
+</script>
+</body>
+</html>

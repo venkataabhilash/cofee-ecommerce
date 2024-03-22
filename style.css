@@ -1,0 +1,583 @@
+header{
+    height: 85px;
+    background-color: rgba(65, 151, 149, 0.996);
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    margin: 0;
+}
+.heading{
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0;
+}
+.order{
+    position: absolute;
+    right: 30px;
+    display: inline-flex;
+    margin: 1px;
+    text-transform: capitalize;
+    border: 1px solid rgb(11, 23, 23);
+    padding: 5px 10px 5px 10px;
+    color: black;
+    font-size: larger;
+}
+.cart{
+    position: absolute;
+    right: 190px;
+    font-size: 35px;
+    color: #0a0a0c; 
+}
+nav{
+    display: inline-flex;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    font-size: larger;
+}
+nav a {
+    color: rgb(16, 26, 5);
+    padding: 10px;
+    transition: all .5s ease;
+}
+.background{
+    background-image: url('https://sleepyowl.co/cdn/shop/files/FOPs_1080x.jpg?v=1702108271');
+    min-height: 600px;
+    width: 100%;
+    margin: 0;
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.9) 100%, rgba(0, 0, 0, 0.9) 100%); */
+    /* -webkit-filter: blur(1px);
+    filter: blur(1px); */
+}
+.content{
+    text-align: center ;
+    text-transform: capitalize;
+    padding: 20px 480px 20px 480px;
+    font-size: 20px;
+}
+.container{
+    display: flex;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+.container1{
+    width: 25vw;
+    height: 450px;
+    background-color: rgb(224, 239, 239);
+    margin: 15px;
+    padding: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  
+}
+.container1 h5 p{
+    margin: 0;
+    padding: 5px 15px 5px 15px;
+  
+}
+.text-label{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+    margin: 2px;
+}
+.eqp-cnt{
+    text-transform: capitalize;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.about-cnt{
+    display: flex;
+   
+}
+.about-img{
+    width: 50%;
+}
+.about-text{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    width: 50%;
+    padding: 10px 20px 10px 20px;
+}
+.branch-cnt{
+    width: 23vw;
+    height: 300px;
+    background-color: rgb(224, 239, 239);
+    margin: 15px;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+.branch-cnt p  {
+    padding: 5px 50px 20px 50px;
+}
+sup{
+    font-size: medium;
+}
+footer{
+    background-color:  rgba(65, 151, 149, 0.996);
+    height: auto;
+    margin: 0;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+button{
+    padding: 2px;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-right: 9px;
+}
+.cnt-cnt{
+    display: flex;
+}
+.cnt-img{
+    width: 60%;
+    margin-left: 50px;
+}
+.cnt-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    background-color:  rgb(224, 239, 239);
+    width: 40%;
+    margin: 1px 100px 7px 100px;
+    border-radius: 8px;
+    font-size: 19px;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+    text-transform: capitalize;
+    position: relative;
+    background-color: rgbA(133, 171, 158, 0.9);
+    width: 400px;
+    height: auto;
+    /* margin: 50px 250px 200px 550px; */
+    border-radius: 8px;
+    font-size: 19px;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 5px;
+}
+h2{
+    text-align: center;
+}
+label{
+    margin-bottom: 5px;
+}
+input{
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 225px;
+}
+button{
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #fff;
+    text-transform: capitalize;
+    font-size: medium;
+    cursor: pointer;
+}
+a{
+    color: black;
+}
+
+/* media screen */
+@media screen and (max-width: 376px) {
+    header{
+        height: 200px;
+        font-size: medium;
+    }
+    .cart{
+        position: absolute;
+        left: 5px;
+    }
+    .background{
+        background-attachment: scroll;
+    }
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .background{
+        width: 100vw;
+        background-position: center;
+    }
+    .content{
+        text-align: center;
+        padding: 20px;
+        font-size: 18px;
+    }
+    .container{
+        display:flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0%;
+    }
+    .container1{
+        width: 92vw;
+        margin: 15px 10px;
+        padding: 5px;
+        text-align: center;
+        height: 440px;
+        border-radius: 8px;
+    }
+    .branch-cnt{
+        width: 92vw;
+        margin: 15px 10px;
+        height: auto;
+    }
+    .cnt-cnt{
+        margin: 0;
+        padding: 0;
+        
+    }
+    .cnt-img{
+        width: 0;
+        margin: 0;
+    }
+    .cnt-text{
+        width: 100%;
+        margin: 2px 4px;
+
+    }
+    .about-cnt{
+        margin: 0;
+        padding: 0;
+
+    }
+    .about-img{
+        width: 0;
+
+    }
+    .about-text{
+        width: 99vw;
+        background-image: url('https://images-workbench.99static.com/5RVK0Hn-CcEZKp3yUsP8xnr-EPQ=/99designs-contests-attachments/141/141923/attachment_141923692');
+        padding: 35px;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: 400px;
+    }
+    .order{
+        position: absolute;
+    right: 10px;
+    font-size: large;
+    }
+    .cart{
+        font-size: 30px;
+        position: absolute;
+        left: 13px;
+    }
+    div h1{
+        margin: 18px auto;
+    }
+            
+}
+@media screen and (max-width: 435px) and (min-width: 377px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        height: 165px;
+        width: 100vw;
+    }
+    .background{
+        background-attachment: scroll;
+    }
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .background{
+        width: 100vw;
+        height: 80%;
+        background-position: center;
+    }
+    .content{
+        text-align: center;
+        padding: 20px;
+        font-size: 18px;
+    }
+    .container{
+        display:flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0%;
+    }
+    .container1{
+        width: 92vw;
+        margin: 15px 10px;
+        padding: 5px;
+        text-align: center;
+        height: 360px;
+        border-radius: 8px;
+    }
+    .branch-cnt{
+        width: 92vw;
+        margin: 15px 10px;
+        height: auto;
+    }
+    .cnt-cnt{
+        margin: 0;
+        padding: 0;
+        
+    }
+    .cnt-img{
+        width: 0;
+        margin: 0;
+    }
+    .cnt-text{
+        width: 100%;
+        margin: 2px 4px;
+
+    }
+    .about-cnt{
+        margin: 0;
+        padding: 0;
+
+    }
+    .about-img{
+        width: 0;
+
+    }
+    .about-text{
+        width: 99vw;
+        background-image: url('https://images-workbench.99static.com/5RVK0Hn-CcEZKp3yUsP8xnr-EPQ=/99designs-contests-attachments/141/141923/attachment_141923692');
+        padding: 35px;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: auto;
+    }
+    .order{
+        position: absolute;
+    right: 10px;
+    font-size: large;
+    }
+    .cart{
+        font-size: 30px;
+        position: absolute;
+        left: 13px;
+    }
+    div h1{
+        margin: 18px auto;
+    }
+
+}
+@media screen and (min-width:430px) and (max-width: 650px) {
+    .branch-cnt{
+        width: 92vw;
+        margin: 15px 10px;
+        height: auto;
+    }   
+    
+}
+@media screen and (min-width: 651px) and (max-width: 800px) {
+    .branch-cnt{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 44%;
+        margin: 10px auto;
+
+    }
+    
+}
+@media screen and (min-width: 431px) and (max-width: 800px) {
+    header{
+        width: 100vw;
+        height: 165px;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .background{
+        background-attachment: scroll;
+        background-position: left;
+    }
+    .cart{
+        position: absolute;
+        left: 15px;
+    }
+    .content{
+        margin: 10px 30px;
+        width: 87vw;
+        padding: 10px;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 98vw;
+        height: auto;
+    }
+    .container1{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 44%;
+        margin: 10px auto;
+    }
+   
+    .container1 img {
+        height: 70%;
+    }
+    .text-label{
+        display: flex;
+        flex-direction: column;
+    }
+    .cnt-cnt{
+        margin: 0;
+        padding: 0;
+        
+    }
+    .cnt-img{
+        width: 0;
+        margin: 0;
+    }
+    .cnt-text{
+        width: 100%;
+        margin: 2px 4px;
+    }
+    .about-cnt{
+        margin: 0;
+        padding: 0;
+
+    }
+    .about-img{
+        width: 0;
+
+    }
+    .about-text{
+        width: 99vw;
+        background-image: url('https://images-workbench.99static.com/5RVK0Hn-CcEZKp3yUsP8xnr-EPQ=/99designs-contests-attachments/141/141923/attachment_141923692') ;
+        padding: 35px;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1150px) {
+    .about-img{
+        margin-top: 115px;
+    }   
+}
+@media screen and (min-width: 801px) and (max-width: 999px) {
+    .about-img{
+        width: 0;
+    }
+    .about-text{
+        width: 99vw;
+        background-image: url('https://images-workbench.99static.com/5RVK0Hn-CcEZKp3yUsP8xnr-EPQ=/99designs-contests-attachments/141/141923/attachment_141923692');
+        padding: 35px;
+    }   
+}
+@media screen and (min-width: 801px) and (max-width: 1150px) {
+    header{
+        width: 100vw;
+        height: 120px;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+    }
+    .cart{
+        position: absolute;
+        left: 10px;
+    }
+    .background{
+        width: 100%;
+        height: 0;
+    }
+    .content{
+        margin: 10px 50px;
+        padding: 30px;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        width: 98vw;
+        flex-wrap: wrap;
+    }
+    .container1 {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 44%;
+        margin: 10px auto;
+
+    }
+    .cnt-img{
+        width: 0;
+    }
+    .cnt-text{
+        width: 95vw;
+    }
+    .branch-cnt{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 44%;
+        margin: 10px auto;
+    }
+    footer{
+        width: 100vw;
+    }    
+}
+@media screen and (min-width: 1150px) and (max-width: 1430px) {
+    .content{
+        margin: 10px 30px;
+        padding: 10px;
+    }
+    .container1{
+        height: 550px;
+    }
+    .text-label{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        width: 98vw;
+    }
+    .branch-cnt{
+        margin: 7px;
+        height: auto;
+    }
+
+}
+
+    
+
+

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>order</title>
+    <style>
+       
+        .bg-container{
+            height: 100vh;
+            width: 100vw;
+            /* background-image: url('https://wallpapercrafter.com/desktop/22905-coffee-cappuccino-cup-foam-4k.jpg'); */
+            background-image: url('https://wallpaperaccess.com/full/2632468.jpg');
+            /* background-image: url('https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZmVlJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww'); */
+            /* filter: blur(5px); */
+            background-size: cover;
+            background-position: center;
+        }
+        .cnt1{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .login{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-transform: capitalize;
+            background-color: rgbA(133, 171, 158, 0.9);
+            width: 350px;
+            height: 400px;
+            border-radius: 8px;
+            /* margin: 200px 200px 200px 600px;  */
+            font-size: large;
+        }
+        .tracking-cnt{
+            display: flex;
+            flex-direction: column;
+            background-color: rgbA(133, 171, 158, 0.9);
+            width: 350px;
+            height:400px;
+            margin: 100px;
+            align-items: center;
+            text-transform: capitalize;
+            border-radius: 8px;
+            justify-content: center;
+            font-size: large;
+            margin-right: 0;
+        }
+        input{
+            padding: 3px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            width: 200px;
+        }
+        button{
+            padding: 7px;
+            text-transform: capitalize;
+            font-size: medium;
+            border-radius: 4px;
+        }
+        /* a{
+            margin-top: 20px;
+            text-transform: capitalize;
+            font-size: large;
+            color: black;
+        } */
+        span{
+            text-transform: none;
+        }
+        /* @media screen and (max-width: 434px) {
+            .cnt1{
+                height: auto;
+            }
+            .bg-container{
+                height: 150px;
+            }
+        } */
+        @media screen and (max-width: 435px) {
+            .bg-container{
+                width: 100vw;
+                height: 130vh;
+            }
+            .cnt1{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+                height: auto;
+                width: 100vw;
+            }
+            .tracking-cnt{
+                margin: 10px;
+                width: 90vw;
+            }
+            .login{
+                margin: 10px;
+                width: 90vw;
+            }
+        }
+        @media screen and (min-width: 436px) and (max-width: 850px) {
+            .bg-container{
+                height: auto;
+                
+            }
+            .cnt1{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .tracking-cnt{
+                margin: 10px;
+            }
+            .login{
+                margin: 15px;
+            }
+            
+        }
+    </style>
+</head>
+<body style="margin: 0;">
+    <header>
+        <h1 class="heading">hola cofee</h1>
+        <nav>
+            <a href="./home.html">home</a>
+            <a href="./equipments.html">equipment</a>
+            <a href="./branch.html">our branches</a>
+            <a href="./contact.html">contact us</a>
+            <a href="./about.html">about</a>
+            <a href="./login.html">login</a>
+        </nav>
+        <a href="./order.html"><h3 class="order">track order</h3></a>
+        <a class="cart" href=""><i class="fa fa-shopping-cart"></i></a>
+    </header>
+    <div  class="bg-container"> 
+    <div class="cnt1">   
+        <div class="login">
+            <h3>welcome to tracking service</h3>
+            <marquee behavior="" direction="">we will deliver your order within 3 working days across india | your  will get reply for your quiries within 30 to 45 minutes</marquee>
+            <p>enter your tracking id</p>
+              <input type="text" placeholder="Enter AWB Number" name="trackid" required>
+              <button type="submit">submit</button>
+              <p>order related quires contact(24/7):-
+                <br> <span>venkataabhilash103@gmail.com</span>
+            </p>
+              
+            <a href="./home.html">home</a>
+        </div>
+        <div class="tracking-cnt">
+           <h3>tracking details</h3>
+           <p style="padding: 50px;">in future we are going to display tracking details here using <span style="font-size: xx-large;"> java script & api</span></p>
+        </div>
+    </div>  
+    </div> 
+    <footer>
+        <div>help :-
+            <p>store location</p>
+            <p>terms apply</p>
+            <p>return polocy</p>
+            <p>refund polocy</p>
+        </div>
+        <div>contact us :-
+            <p>hello@hola9.com</p>
+            <p> our main branch : <br>D.NO:40-5-19/4, Tikkal Road,<br> Moghalrajapuram,
+                Vijayawada,<br> Andhra Pradesh - 520010</p>
+        </div>
+        <div>
+            support :-
+            <p>contact</p>
+            <p>about</p>
+            <p>refund & return</p>
+            <p>t & c</p>
+        </div>
+        <div>
+            social media handles :-
+            <p>twiter : www.twiter.h9.com</p>
+            <p>instagram : www.inst.hola9.in</p>
+            <p>facebook : www.fb.hola9.in</p>
+            <p>youtube : www.youtube.h9.in</p>
+        </div>
+    </footer>
+</body>
+</html>
